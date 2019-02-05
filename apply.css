@@ -3,7 +3,7 @@ header {
     padding: 3px;
     margin: 3px;
 }
-#contact-info {
+#contact-info, #background-info {
     border: 1px solid black;
     padding: 3px;
     margin: 3px; 
