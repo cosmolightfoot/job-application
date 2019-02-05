@@ -3,11 +3,12 @@ header {
     padding: 3px;
     margin: 3px;
 }
-#contact-info, #background-info {
+#contact-info, #background-info, button {
     border: 1px solid black;
     padding: 3px;
     margin: 3px; 
 }
 #comfort-field {
     font-weight: bold;
+    background-color: yellow;
 }

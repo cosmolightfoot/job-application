@@ -3,13 +3,10 @@ const nameNode = document.getElementById('name');
 const phoneNode = document.getElementById('phone')
 const comfortNode = document.getElementById('comfort');
 const comfortFieldNode = document.getElementById('comfort-field');
-
+const burialNode = document.getElementById('burial');
 comfortNode.addEventListener('change', function(){
-    var messageSelector;
+    let messageSelector;
     let select = comfortNode.value;
-    
-    var rangeValue = comfortNode.value;
-    console.log('comfort value', rangeValue);
     switch (select) {
         case '1': 
             messageSelector = 'I have a strong aversion to being incinerated.';
@@ -21,7 +18,7 @@ comfortNode.addEventListener('change', function(){
             messageSelector = 'I am neither pleased nor displeased by my calories being released as thermal energy.';
             break;
         case '4': 
-            messageSelector = 'I find the notion of becoming a smoking pile of ash acceptable.';
+            messageSelector = 'I find the notion of becoming a ruined pile of ash acceptable.';
             break;
         case '5': 
             messageSelector = 'SACRIFICE ME TO THE LORD OF LIGHT, FOR THE NIGHT IS DARK AND FULL OF TERRORS!!!';
@@ -30,3 +27,14 @@ comfortNode.addEventListener('change', function(){
     comfortFieldNode.textContent = messageSelector;
 });
 
+formNode.addEventListener('submit', function(event) {
+    event.preventDefault();
+    const applicant = {
+        name: nameNode.value,
+        phone: phoneNode.value,
+        comfort: comfortNode.value,
+        burial: burialNode.value
+    };
+    console.log(applicant);
+    
+});

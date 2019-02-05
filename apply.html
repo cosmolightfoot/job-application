@@ -38,7 +38,7 @@
                     </p>
             </section>
             <section id="background-info">
-                <h2>Character Information</h2>
+                <h2>Background Information</h2>
                 <p>Move the slider until the below sentence agrees with you:
                 </p>
                 <p>
@@ -53,6 +53,15 @@
                 <p id="comfort-field">
                     I have a strong aversion to being incinerated.
                 </p>
+                <p>Please choose the appropriate place to scatter your ashes:</p>
+                <select id="burial" name="burial" required>
+                    <option value="" hidden disabled selected>Select Location</option>
+                    <option class="burial-item" id="mountain-top" value="mountain-top">Pristine Mountain Top</option>
+                    <option class="burial-item" id="alleyway" value="alleyway">Depraved Alleyway</option>
+                    <option class="burial-item" id="ocean" value="ocean">Sparkling Ocean</option>
+                    <option class="burial-item" id="backyard" value="backyard">Your Backyard</option>
+                    <option class="burial-item" id="porch" value="porch">Your Ex's Porch</option>
+                </select>
             </section>
             <button id="submit">Submit Application!</button>
         </form>
